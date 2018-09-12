@@ -1,0 +1,36 @@
+# A collection of useful aliases
+
+# Only shadow certain commands and only allow for
+# those commands in interactive mode
+if [ -n "$PS1" ] ; then
+
+   #Colorize your ls output
+   # On OSX, ls doesn't have a --color option
+   if [ "$IS_OSX" = "true" ] ; then
+      alias ls='ls -hG'
+      alias ll='ls  -alhG'
+   else
+      alias ls='ls --color=auto -h'
+      alias ll='ls --color=auto -alh'
+   fi
+
+   alias grep='grep --color=auto'
+
+   #SSH alias for osx. Will only matter if you are on iTerm
+   # For users on iTerm, will display the host name in the top right corner of the screen
+   # when they SSH into a remote host
+   if [ -n "$PS1" ] && [ "$IS_OSX" = "true" ] ; then
+      alias ssh='zb ssh'
+   fi
+
+fi
+
+#Common aliases. Saves a few keystrokes
+alias findn='find . -name'
+
+###############
+# Navigation Aliases
+
+#Allows aliases to also have auto complete enabled
+# Needs more testing. emacs autocomplete fails with this script on
+#. $ZBLIB/.alias_autocomplete

@@ -1,0 +1,44 @@
+#!/bin/bash
+
+export ZCOLORIZE_PATH=$ZBLIB/colorize
+
+if [ "$ZCOLORIZE" != "false" ]; then
+
+    [ -n "`alias -p | grep '^alias mvn='`" ] && unalias mvn
+    mvn-color()
+    {
+      command mvn $@ | python $ZCOLORIZE_PATH/colorize.py
+      return ${PIPESTATUS[0]}
+    }
+
+    if [ "$(type -t zwj)" = "function" ]; then
+        # only modify if the functions have been provided by setEnv
+
+        [ -n "`alias -p | grep '^alias zwj='`" ] && unalias zwj
+        zwj-color()
+        {
+          zwj $@ | python $ZCOLORIZE_PATH/colorize.py
+          return ${PIPESTATUS[0]}
+        }
+
+        [ -n "`alias -p | grep '^alias zwc='`" ] && unalias zwc
+        zwc-color()
+        {
+          zwc $@ | python $ZCOLORIZE_PATH/colorize.py
+          return ${PIPESTATUS[0]}
+        }
+
+        [ -n "`alias -p | grep '^alias zdeps='`" ] && unalias zdeps
+        zdeps-color()
+        {
+          zdeps $@ | python $ZCOLORIZE_PATH/colorize.py
+          return ${PIPESTATUS[0]}
+        }
+
+        alias zwj="zwj-color"
+        alias zwc="zwc-color"
+        alias zdeps="zdeps-color"
+    fi
+
+    alias mvn="mvn-color"
+fi

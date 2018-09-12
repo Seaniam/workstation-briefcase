@@ -1,0 +1,70 @@
+2013-09-16 18:39:34,489 INFO  [Mortgage Vibrancy Data Cache Update Thread][][][][org.apache.commons.httpclient.HttpMethodDirector] Retrying request
+2013-09-16 18:15:44,954 DEBUG [btpool0-6][172.22.32.112][pvnr4jvjr4e0][32][com.zillow.service.pogo.propertysupport.EmailAddressEditor] Setting null for invalid email address
+2013-09-16 18:39:34,490 WARN  [Mortgage Vibrancy Data Cache Update Thread][][][][com.zillow.service.mortgage.vibrancy.MortgageVibrancyCacheManagerImpl] Exception thrown while caching vibrancy data.
+2013-09-16 18:15:44,928 ERROR [btpool0-6][172.22.32.112][pvnr4jvjr4e0][32][com.zillow.web.components.profiles.MyEndorsers] Couldn't find any endorsers for site account 2296165, tried 1 zuids.
+
+[debug] execute contextualize
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 15 source files to /home/marcusw/stash/Libs/customer-support-reporting/impl/target/test-classes
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.zillow.service.customersupport.report.builder.ProfilePageIssueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Tests run: 4234, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 1, Time elapsed: 0.377 sec
+Results :
+
+Tests run: 86, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 86, Failures: 3, Errors: 1, Skipped: 4
+
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Customer Support Reporting API .................... SUCCESS [5.080s]
+[INFO] Customer Support Report Implementation ............ SUCCESS [8.815s]
+[INFO] Customer Support Reporting ........................ SUCCESS [0.056s]
+[INFO] Customer Support Reporting API .................... FAILURE [5.080s]
+[INFO] Customer Support Report Implementation ............ FAIL [8.815s]
+[INFO] Customer Support Reporting ........................ SKIPPED [0.056s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+BUILD SUCCESSFUL
+[INFO] BUILD FAILURE
+[INFO] BUILD FAIL
+BUILD FAILURE
+BUILD FAIL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.539s
+[INFO] Finished at: Mon Sep 16 15:31:02 PDT 2013
+[INFO] Final Memory: 96M/2644M
+[INFO] ------------------------------------------------------------------------
+
+
+2013-09-17 09:35:13,700 DEBUG [AdStatusConfigRefresh][][][][com.zillow.service.ads.AdStatusManagerImpl] executing sql: class com.zillow.db.CallableStatementImpl-wraps(net.sourceforge.jtds.jdbc.JtdsCallableStatement@7cfe8ef5)
+2013-09-17 09:35:13,700 DEBUG [ButtonAdConfigRefresh][][][][com.zillow.service.ads.ButtonAdManagerImpl] executing sql: class com.zillow.db.CallableStatementImpl-wraps(net.sourceforge.jtds.jdbc.JtdsCallableStatement@4343629a)
+2013-09-17 09:35:13,701 DEBUG [AdStatusConfigRefresh][][][][com.zillow.service.ads.AdStatusManagerImpl] ad status cache successfully updated. rescheduling next update task in 300000 milliseconds.
+2013-09-17 09:35:13,702 DEBUG [ButtonAdConfigRefresh][][][][com.zillow.service.ads.ButtonAdManagerImpl] button ad cache successfully updated. rescheduling next update task in 300000 milliseconds.
+2013-09-17 09:35:24,761 DEBUG [Thread-35][][][][com.zillow.abtest.ABTestDatastoreUpdateRunner] Data sync complete
+2013-09-17 09:35:37,797 INFO  [Page Pool Purge Thread][][][][com.zillow.web.infrastructure.BoundedObjectPool] Purged 0 old page objects.
+2013-09-17 09:36:24,787 DEBUG [Thread-35][][][][com.zillow.abtest.ABTestDatastoreUpdateRunner] Data sync complete
+2013-09-17 09:36:37,797 INFO  [Page Pool Purge Thread][][][][com.zillow.web.infrastructure.BoundedObjectPool] Purged 0 old page objects.
+
+2013-09-17 10:57:11,793 FATAL [main][][][][com.zillow.db.ConfigurationDrivenDataSource] Unable to create 1 pools!
+
+
+2013-09-17 12:11:24.07::INFO:  Started SelectChannelConnector@0.0.0.0:8080
+2013-09-17 12:11:24.010::INFO:  Started SecureSelectChannelConnector@0.0.0.0:8443
+
+2013-09-17 12:11:24.07::INFO:  Blahlhalhaha
+
+    [apply] ✔ [zmm-quote-viewer]: Passed: 2 Failed: 0 Total: 2 (ignored 0) (0.006 seconds)
+    [apply] ✔ [zillow-wiki-manager]: Passed: 2 Failed: 1 Total: 2 (ignored 0) (0.043 seconds)
+    [apply] ----------------------------------------------------------------
+    [apply] ✔ [Total]: Passed: 1797 Failed: 0 Total: 1887 (ignored 90) (41.197 seconds)
+    [apply] ✔ [Total]: Passed: 1797 Failed: 2 Total: 1887 (ignored 90) (41.197 seconds)
+    [apply]   [Grover Execution Timer] 42.549 seconds
